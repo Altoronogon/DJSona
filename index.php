@@ -1,72 +1,30 @@
-class RudikovakotovaException extends RuntimeException {
+<?php
+ini_set("display_errors",1);error_reporting(-1);
+include_once("core/EquationInterface.php");
+include_once("core/LogInterface.php");
+include_once("core/LogAbstract.php");
+include_once("Mallik/rudException.php");
+include_once("Mallik/Linear.php");
+include_once("Mallik/Quadratic.php");
+include_once("Mallik/Log.php");
+
+$a = 1;
+$b = 9;
+$c = 1;
+
+try {
+	$solver = new Mallik\Quadratic($a, $b, $c);
+	$roots = $solver->ur2($a, $b, $c);
+	
+	if (is_array($roots)) {
+		Mallik\Log::log("two roots");
+		Mallik\Log::log("roots: " . $roots[0] . " " . $roots[1]);
+	} else {
+		Mallik\Log::log("one root");
+		Mallik\Log::log("root: " . $roots);
+	}
+}catch(Mallik\BTSException $ex) {
+	Mallik\Log::log($ex->getMessage());
 }
-class A {
-	protected a;
-	protected b;
-	protected x;
-	function __construct($a, $b){
-		$this->a=$a;
-		$this->b=$b;
-	}
-	function ur($a, $b){
-		if ($a != 0) {
-			$x = -1*$b/$a;
-			$this->x = $x;
-			return $x;
-		}
-		throw new RudikovakotovaException ("нет решения");	
-	}
-}
-class B extends A{
-	protected c;
-	protected x2;
-	function __construct($a, $b, $c){
-		parent::__construct($a, $b);
-		$this->c=$c;
-	}
-	protected function nv(($a, $b, $c) {
-		$nv = $b*$b - 4*$a*$c;
-		return $nv;
-	}
-	function ur2(($a, $b, $c) {
-		if ($a==0) {
-		$this->ur($a,$b);
-		}
-		$nv = $this->nv();
-		if ($nv >0){
-			$x = (-1*$b + sqrt($nv))/(2*$a);
-			$x2 = (-1*$b - sqrt($nv))/(2*$a);
-			$this->x = $x;
-			$this->x2 = $x2;
-			return array($x, $x2);
-		} else ($nv = 0) {
-			$x = (-1*$b)/(2*$a);
-			$this->x = $x;
-			return array($x);
-		}
-		throw new RudikovakotovaException ("нет решения");
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Mallik\Log::write();
+?>

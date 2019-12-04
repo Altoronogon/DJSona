@@ -2,15 +2,16 @@
 namespace Mallik;
 // Линейное уравнение a*x + b = 0
 
-class Linear {
+class Linear{
 	protected $x;
 	function ur($a, $b){
 		if ($a != 0) {
 			$x = -1*$b/$a;
 			$this->x = $x;
-			return $x;
+			Log::log("Equation is linear");
+			return array($x);
 		}
-		throw new BTSException("no solutions");	
+		throw new MallikException("no solutions");	
 	}
 }
 ?>

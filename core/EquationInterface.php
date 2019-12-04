@@ -1,6 +1,6 @@
 <?php
 namespace core;
-interface EquationInterface {
+interface EquationInterface{
 	public function solve($a, $b, $c);
 }
 ?>

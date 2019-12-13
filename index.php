@@ -1,12 +1,15 @@
 <?php
 ini_set("display_errors",1);error_reporting(-1);
-include_once("vendor/core/EquationInterface.php");
-include_once("vendor/core/LogInterface.php");
-include_once("vendor/core/LogAbstract.php");
-include_once("vendor/Mallik/MallikException.php");
-include_once("vendor/Mallik/Linear.php");
-include_once("vendor/Mallik/Square.php");
-include_once("vendor/Mallik/Log.php");
+
+require __DIR__ . '\vendor\autoload.php';
+
+include_once("vendor/rok9ru/trpo-core/EquationInterface.php");
+include_once("vendor/rok9ru/trpo-core/LogInterface.php");
+include_once("vendor/rok9ru/trpo-core/LogAbstract.php");
+include_once("vendor/altoronogon/Mallik/MallikException.php");
+include_once("vendor/altoronogon/Mallik/Linear.php");
+include_once("vendor/altoronogon/Mallik/Square.php");
+include_once("vendor/altoronogon/Mallik/Log.php");
 $co_arr = [];
 $file = fopen("project/version", "r");
 $version = fread($file, 1024);

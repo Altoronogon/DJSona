@@ -1,3 +1,4 @@
+md log
 path=H:\git\bin;H:\php-7.3.11;%path%
 git symbolic-ref --short -q HEAD>version
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"

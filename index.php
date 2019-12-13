@@ -11,7 +11,7 @@ include_once("vendor/altoronogon/Mallik/Linear.php");
 include_once("vendor/altoronogon/Mallik/Square.php");
 include_once("vendor/altoronogon/Mallik/Log.php");
 $co_arr = [];
-$file = fopen("project/version", "r");
+$file = fopen("version", "r");
 $version = fread($file, 1024);
 Mallik\Log::log("Program version: $version");
 foreach(["a", "b", "c"] as $co) {

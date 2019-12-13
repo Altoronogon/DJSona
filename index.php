@@ -1,12 +1,12 @@
 <?php
 ini_set("display_errors",1);error_reporting(-1);
-include_once("core/EquationInterface.php");
-include_once("core/LogInterface.php");
-include_once("core/LogAbstract.php");
-include_once("Mallik/MallikException.php");
-include_once("Mallik/Linear.php");
-include_once("Mallik/Square.php");
-include_once("Mallik/Log.php");
+include_once("vendor/core/EquationInterface.php");
+include_once("vendor/core/LogInterface.php");
+include_once("vendor/core/LogAbstract.php");
+include_once("vendor/Mallik/MallikException.php");
+include_once("vendor/Mallik/Linear.php");
+include_once("vendor/Mallik/Square.php");
+include_once("vendor/Mallik/Log.php");
 $co_arr = [];
 $file = fopen("project/version", "r");
 $version = fread($file, 1024);

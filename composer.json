@@ -6,11 +6,11 @@
 		{
 			"type": "package",
 			"package": {
-				"name": "altoronogon/mallik",
+				"name": "altoronogon/myname",
 				"version": "dev-master",
 				"source": {
 					"type": "git",
-					"url": "https://github.com/altoronogon/mallik.git",
+					"url": "https://github.com/altoronogon/myname.git",
 					"reference": "master"
 				},
             "require": {

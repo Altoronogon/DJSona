@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ac52c119c4011d3b1c1a7580f95a471a",
+    "content-hash": "229cd7b78a148301f3664ec6298be34a",
     "packages": [
         {
             "name": "altoronogon/mallik",

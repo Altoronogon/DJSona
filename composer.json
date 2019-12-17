@@ -40,7 +40,7 @@
 	},
 	"autoload": {
     "psr-0": {
-      "mallik": "vendor/altoronogon/mallik"
+      "mallik": ""
     }
   }
 }

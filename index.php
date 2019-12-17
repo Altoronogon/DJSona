@@ -11,17 +11,16 @@ include_once("vendor/altoronogon/Mallik/Linear.php");
 include_once("vendor/altoronogon/Mallik/Square.php");
 include_once("vendor/altoronogon/Mallik/Log.php");
 $co_arr = [];
-$file = fopen("version", "r");
-$version = fread($file, 1024);
+
+$version = fopen("version", "r");
+
+
+$a=readline("a=");
+$b=readline("b=");  
+$c=readline("c="); 
+
 Mallik\Log::log("Program version: $version");
-foreach(["a", "b", "c"] as $co) {
-	echo "Enter ".$co.": ";
-	$line = stream_get_line(STDIN, 1024, PHP_EOL);
-	$co_arr[$co] = $line === "" ? 0 : $line;
-}
-$a = $co_arr["a"];
-$b = $co_arr["b"];
-$c = $co_arr["c"];
+
 //Mallik\Log::_write();
 //Mallik\Log::log("Entered numbers: " . implode(", ", $co_arr));
 Mallik\Log::log("Equation: $a*x^2 + $b*x + $c = 0");

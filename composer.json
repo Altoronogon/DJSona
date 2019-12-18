@@ -6,11 +6,11 @@
 		{
 			"type": "package",
 			"package": {
-				"name": "altoronogon/myname",
+				"name": "altoronogon/mallik",
 				"version": "dev-master",
 				"source": {
 					"type": "git",
-					"url": "https://github.com/altoronogon/myname.git",
+					"url": "https://github.com/altoronogon/mallik.git",
 					"reference": "master"
 				},
             "require": {
@@ -35,7 +35,6 @@
 		}
 	],
 	"require": {
-		"rok9ru/trpo-core": "dev-master",
 		"altoronogon/mallik": "dev-master"
 	},
 	"autoload": {

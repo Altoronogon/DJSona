@@ -19,7 +19,8 @@ $a=readline("a=");
 $b=readline("b=");  
 $c=readline("c="); 
 
-Mallik\Log::log("Program version: $version");
+Mallik\Log::log('Version '.file_get_contents('version'));
+//Mallik\Log::log("Program version: $version");
 
 //Mallik\Log::_write();
 //Mallik\Log::log("Entered numbers: " . implode(", ", $co_arr));

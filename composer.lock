@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f17393c270299810aa48964e636639a0",
+    "content-hash": "bb938e811b1bb91e2ce16a109c5276a6",
     "packages": [
         {
             "name": "altoronogon/mallik",
@@ -32,14 +32,43 @@
                     "email": "rok_9@mail.ru"
                 }
             ],
-            "time": "2019-12-18T13:30:25+00:00"
+            "time": "2019-12-18T14:41:46+00:00"
+        },
+        {
+            "name": "rok9ru/trpo-core",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rok9ru/trpo-core.git",
+                "reference": "master"
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "trpo-core\\": ""
+                }
+            },
+            "license": [
+                "LGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Sleepplayer",
+                    "email": "rok_9@mail.ru"
+                }
+            ],
+            "time": "2019-11-23T10:22:55+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "altoronogon/mallik": 20
+        "altoronogon/mallik": 20,
+        "rok9ru/trpo-core": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

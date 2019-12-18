@@ -1,6 +1,6 @@
 {
 	"minimum-stability": "dev",
-    "name": "altoronogon/djsona",
+    "name": "nightbiribidzhann/trpo",
 	"license": "LGPL-3.0-or-later",
 	"repositories": [
 		{
@@ -34,12 +34,40 @@
 			}
 		}
 	],
+	"repositories": [
+		{
+			"type": "package",
+			"package": {
+				"name": "rok9ru/trpo-core",
+				"version": "dev-master",
+				"source": {
+					"type": "git",
+					"url": "https://github.com/rok9ru/trpo-core.git",
+					"reference": "master"
+				},
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "trpo-core\\": ""
+                }
+            },
+            "license": [
+                "LGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+					"name": "Sleepplayer",
+					"email": "rok_9@mail.ru"
+                }
+            ]
+			}
+		}
+	],
 	"require": {
-		"altoronogon/mallik": "dev-master"
-	},
-	"autoload": {
-    "psr-0": {
-      "mallik": ""
-    }
-  }
+		"altoronogon/mallik": "dev-master",
+		"rok9ru/trpo-core": "dev-master"
+	}
 }
